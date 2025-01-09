@@ -3,12 +3,16 @@
 import { 
   DivContainer,
   DivSubContainer,
+  DivLeftContent,
+  DivRightContent,
   GreetingsText,
   AnimatedTextContainer,
   AnimatedText, 
-  AnimatedDash 
+  AnimatedDash,
+  ImageWrapper
 } from "./greetings.style";
 import { useState, useEffect } from "react";
+import Image from 'next/image';
 
 export default function GreetingsSection() {
   const phrases = [
@@ -81,11 +85,20 @@ export default function GreetingsSection() {
   return (
     <DivContainer id="greetings-section">
       <DivSubContainer>
-      <GreetingsText>Hi, I&apos;m Alan. I&apos;m a</GreetingsText>
-        <AnimatedTextContainer>
-          <AnimatedText>{text}</AnimatedText>
-          <AnimatedDash isBlinking={isBlinking}>|</AnimatedDash>
-        </AnimatedTextContainer>
+        <DivLeftContent>
+          <GreetingsText>Hi, I&apos;m Alan. I&apos;m a</GreetingsText>
+          <AnimatedTextContainer>
+            <AnimatedText>
+              {text}
+              <AnimatedDash isBlinking={isBlinking}>|</AnimatedDash>
+            </AnimatedText>
+          </AnimatedTextContainer>
+        </DivLeftContent>
+        <DivRightContent>
+          <ImageWrapper>
+            <Image src="/javascript.png" alt="Minha foto xisde" fill />
+          </ImageWrapper>
+        </DivRightContent>
       </DivSubContainer>
     </DivContainer>
   );
