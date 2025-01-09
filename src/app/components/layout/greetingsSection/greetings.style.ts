@@ -47,12 +47,16 @@ export const GreetingsText = styled.h1`
   color: white;
 `;
 
+export const NameHighlight = styled.span`
+  color: #5FAAD9;
+`;
+
 export const AnimatedTextContainer = styled.div`
   display: flex;
 `;
 
 export const AnimatedText = styled.p`
-  color: white;
+  color: #5FAAD9;
   font-size: 4rem;
 `;
 

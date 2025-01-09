@@ -6,6 +6,7 @@ import {
   DivLeftContent,
   DivRightContent,
   GreetingsText,
+  NameHighlight,
   AnimatedTextContainer,
   AnimatedText, 
   AnimatedDash,
@@ -26,7 +27,6 @@ export default function GreetingsSection() {
     "Former Lawyer",
     "Boardgame Enthusiast",
     "Blue-belt Judo Fighter",
-    "Why are you still reading this?",
   ];
 
   const [text, setText] = useState("");
@@ -35,7 +35,7 @@ export default function GreetingsSection() {
   const [isBlinking, setIsBlinking] = useState(false);
   const [isPaused, setIsPaused] = useState(false);
   const pauseTime = 7000;
-  const startTime = 5000;
+  const startTime = 3000;
   const typingSpeed = 100;
   const deletingSpeed = 50;
 
@@ -86,7 +86,7 @@ export default function GreetingsSection() {
     <DivContainer id="greetings-section">
       <DivSubContainer>
         <DivLeftContent>
-          <GreetingsText>Hi, I&apos;m Alan. I&apos;m a</GreetingsText>
+          <GreetingsText>Hi, I&apos;m <NameHighlight>Alan</NameHighlight>. I&apos;m a</GreetingsText>
           <AnimatedTextContainer>
             <AnimatedText>
               {text}
@@ -96,7 +96,7 @@ export default function GreetingsSection() {
         </DivLeftContent>
         <DivRightContent>
           <ImageWrapper>
-            <Image src="/javascript.png" alt="Minha foto xisde" fill />
+            <Image src="/me_1.png" alt="Minha foto xisde" fill />
           </ImageWrapper>
         </DivRightContent>
       </DivSubContainer>
