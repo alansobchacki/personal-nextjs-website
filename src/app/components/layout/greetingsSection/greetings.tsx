@@ -1,6 +1,8 @@
 'use client'
 
 import { 
+  DivContainer,
+  DivSubContainer,
   GreetingsText,
   AnimatedTextContainer,
   AnimatedText, 
@@ -10,9 +12,17 @@ import { useState, useEffect } from "react";
 
 export default function Greetings() {
   const phrases = [
-    "Web Developer",
     "Full Stack Developer",
     "Software Engineer",
+    "Web Developer",
+    "Ruby Enthusiast",
+    "React Wizard",
+    "Graphic Designer",
+    "Content Creator",
+    "Former Lawyer",
+    "Boardgame Enthusiast",
+    "Blue-belt Judo Fighter",
+    "Why are you still reading this?",
   ];
 
   const [text, setText] = useState("");
@@ -69,12 +79,14 @@ export default function Greetings() {
   }, [text]);
 
   return (
-    <>
+    <DivContainer id="greetings-section">
+      <DivSubContainer>
       <GreetingsText>Hi, I&apos;m Alan. I&apos;m a</GreetingsText>
-      <AnimatedTextContainer>
-        <AnimatedText>{text}</AnimatedText>
-        <AnimatedDash isBlinking={isBlinking}>|</AnimatedDash>
-      </AnimatedTextContainer>
-    </>
+        <AnimatedTextContainer>
+          <AnimatedText>{text}</AnimatedText>
+          <AnimatedDash isBlinking={isBlinking}>|</AnimatedDash>
+        </AnimatedTextContainer>
+      </DivSubContainer>
+    </DivContainer>
   );
 }

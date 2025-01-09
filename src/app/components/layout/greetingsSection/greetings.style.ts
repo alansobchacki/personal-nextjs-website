@@ -13,8 +13,22 @@ const blinkingDash = keyframes`
   }
 `;
 
+export const DivContainer = styled.section`
+  display: flex;
+`;
+
+export const DivSubContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 16px;
+  box-sizing: border-box;
+`;
+
 export const GreetingsText = styled.h1`
-  font-size: 42px;
+  font-size: 4rem;
   color: white;
 `;
 
@@ -24,13 +38,13 @@ export const AnimatedTextContainer = styled.div`
 
 export const AnimatedText = styled.p`
   color: white;
-  font-size: 42px;
+  font-size: 4rem;
 `;
 
 export const AnimatedDash = styled.span<Props>`
-  font-size: 22px;
+  font-size: 4rem;
   font-weight: 400;
-  color: black;
+  color: white;
   animation: ${(props) =>
     props.isBlinking
       ? css`
