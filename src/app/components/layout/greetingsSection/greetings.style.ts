@@ -15,6 +15,8 @@ const blinkingDash = keyframes`
 
 export const DivContainer = styled.section`
   display: flex;
+  padding-top: 75px;
+  padding-bottom: 50px;
 `;
 
 export const DivSubContainer = styled.div`

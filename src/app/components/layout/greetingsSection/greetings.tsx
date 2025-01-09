@@ -10,13 +10,13 @@ import {
 } from "./greetings.style";
 import { useState, useEffect } from "react";
 
-export default function Greetings() {
+export default function GreetingsSection() {
   const phrases = [
     "Full Stack Developer",
     "Software Engineer",
     "Web Developer",
+    "React Developer",
     "Ruby Enthusiast",
-    "React Wizard",
     "Graphic Designer",
     "Content Creator",
     "Former Lawyer",
