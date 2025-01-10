@@ -20,9 +20,15 @@ export default function ContactSection() {
           reach out on social media or send me an email.
         </Description>
         <SocialIcons>
-          <Image src="/github-mark-white.svg" alt="Github icon" width={24} height={24} />
-          <Image src="/linkedin.svg" alt="LinkedIn icon" width={24} height={24} />
-          <Image src="/gmail.svg" alt="Gmail icon" width={24} height={24} />
+          <a href="https://github.com/alansobchacki" target="_blank" rel="noopener noreferrer">
+            <Image src="/github-mark-white.svg" alt="Github icon" width={24} height={24} />
+          </a>
+          <a href="https://www.linkedin.com/in/alansobchacki/" target="_blank" rel="noopener noreferrer">
+            <Image src="/linkedin.svg" alt="LinkedIn icon" width={24} height={24} />
+          </a>
+          <a href="mailto:a.sobchack@gmail.com">
+            <Image src="/gmail.svg" alt="Gmail icon" width={24} height={24} />
+          </a>
         </SocialIcons>
       </DivSubContainer>
     </DivContainer>

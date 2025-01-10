@@ -2,12 +2,12 @@
 
 import { 
   DivContainer, 
-  DivSubContainer,
+  StyledButton
  } from "./lightButton.style";
 import { useState, useEffect } from "react";
 
 export default function LightButton() {
-  const [theme, setTheme] = useState<string | null>(null);
+  const [theme, setTheme] = useState('');
 
   useEffect(() => {
     const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches
@@ -25,9 +25,7 @@ export default function LightButton() {
 
   return (
     <DivContainer>
-      <DivSubContainer>
-        <button onClick={toggleTheme}>Clique Aqui</button>
-      </DivSubContainer>
+      <StyledButton Theme={theme} onClick={toggleTheme} />
     </DivContainer>
   )
 }

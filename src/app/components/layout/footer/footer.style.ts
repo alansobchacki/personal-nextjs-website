@@ -19,7 +19,14 @@ export const DivSubContainer = styled.div`
 `;
 
 export const Copyright = styled.p`
+  font-size: 1.2rem;
 `;
 
 export const Email = styled.p`
+  font-size: 1.2rem;
+  transition: opacity 0.5s ease;
+
+  &:hover {
+    opacity: 0.6;
+  }
 `;

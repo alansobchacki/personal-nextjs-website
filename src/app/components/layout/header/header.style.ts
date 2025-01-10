@@ -19,8 +19,16 @@ export const DivSubContainer = styled.div`
 
 export const StyledUnorderedList = styled.ul`
   display: flex;
+  align-items: center;
   gap: 25px;
+  list-style: none;
 `;
 
 export const ListItem = styled.li`
+  font-size: 1.2rem;
+  transition: opacity 0.5s ease;
+
+  &:hover {
+    opacity: 0.6;
+  }
 `;

@@ -15,20 +15,21 @@ export const DivSubContainer = styled.div`
   margin: 0 auto;
   padding: 0 16px;
   box-sizing: border-box;
-  gap: 15px;
+  gap: 10px;
 `;
 
 export const Title = styled.h2`
-
+  font-size: 1.5rem;
 `;
 
 export const Description = styled.p`
-
+  font-size: 1.1rem;
 `;
 
 export const SocialIcons = styled.div`
   display: flex;
   flex-direction: row;
+  padding-top: 15px;
   gap: 5px;
 `;
 

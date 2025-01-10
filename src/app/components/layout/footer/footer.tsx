@@ -12,7 +12,9 @@ export default function Footer() {
     <DivContainer id="footer">
       <DivSubContainer>
         <Copyright>&copy; 2025 | Alan Sobchacki</Copyright>
-        <Email>a.sobchack@gmail.com</Email>
+        <a href="mailto:a.sobchack@gmail.com">
+          <Email>a.sobchack@gmail.com</Email>
+        </a>
       </DivSubContainer>
     </DivContainer>
   )
