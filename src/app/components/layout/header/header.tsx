@@ -7,7 +7,6 @@ import {
   ListItem
  } from "./header.style";
 import LightButton from '../../common/lightButton/lightButton';
-// import Image from 'next/image';
 
  export default function Header() { 
   return (
