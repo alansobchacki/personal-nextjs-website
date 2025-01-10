@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
-export const DivContainer = styled.footer`
+export const DivContainer = styled.header`
   display: flex;
-  flex-direction: column;
-  margin-top: auto;
+  color: white;
+  padding-top: 15px;
 `;
 
 export const DivSubContainer = styled.div`
@@ -12,14 +12,8 @@ export const DivSubContainer = styled.div`
   justify-content: space-between;
   width: 100%;
   max-width: 1080px;
+  max-height: 50px;
   margin: 0 auto;
   padding: 0 16px;
-  padding-bottom: 25px;
   box-sizing: border-box;
-`;
-
-export const Copyright = styled.p`
-`;
-
-export const Email = styled.p`
 `;

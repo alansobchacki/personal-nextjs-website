@@ -7,6 +7,7 @@ import {
   Description,
   SocialIcons,
 } from './contactSection.style';
+// import { useState, useEffect } from 'react';
 import Image from 'next/image';
 
 export default function ContactSection() {

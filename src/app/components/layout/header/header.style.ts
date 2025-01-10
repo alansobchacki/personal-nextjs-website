@@ -2,13 +2,13 @@ import styled from "styled-components";
 
 export const DivContainer = styled.header`
   display: flex;
-  color: white;
   padding-top: 15px;
 `;
 
 export const DivSubContainer = styled.div`
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
+  justify-content: space-between;
   width: 100%;
   max-width: 1080px;
   max-height: 50px;

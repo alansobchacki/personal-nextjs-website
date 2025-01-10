@@ -31,11 +31,10 @@ export const DivSubContainer = styled.div`
 
 export const GreetingsText = styled.h1`
   font-size: 4.5rem;
-  color: white;
 `;
 
 export const NameHighlight = styled.span`
-  color: #5FAAD9;
+  color: #007EBB !important;
 `;
 
 export const AnimatedTextContainer = styled.div`
@@ -43,14 +42,13 @@ export const AnimatedTextContainer = styled.div`
 `;
 
 export const AnimatedText = styled.p`
-  color: #5FAAD9;
+  color: #007EBB;
   font-size: 4.5rem;
 `;
 
 export const AnimatedDash = styled.span<Props>`
   font-size: 4.5rem;
   font-weight: 400;
-  color: white;
   animation: ${(props) =>
     props.isBlinking
       ? css`
