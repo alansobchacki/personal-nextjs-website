@@ -9,7 +9,7 @@ export const DivContainer = styled.footer`
 
 export const DivSubContainer = styled.div`
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   justify-content: space-between;
   width: 100%;
   max-width: 1080px;
@@ -19,25 +19,8 @@ export const DivSubContainer = styled.div`
   box-sizing: border-box;
 `;
 
-export const DivSideContent = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+export const Copyright = styled.p`
 `;
 
-export const Title = styled.p`
-  font-size: 24px;
-`;
-
-export const Arrow = styled.span`
-  position: relative;
-  top: 20%;
-  transform: rotate(50deg);
-  display: inline-block;
-`;
-
-export const IconContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
+export const Email = styled.p`
 `;

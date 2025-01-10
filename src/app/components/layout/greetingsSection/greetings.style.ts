@@ -21,7 +21,7 @@ export const DivContainer = styled.section`
 
 export const DivSubContainer = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 100%;
   max-width: 1080px;
   margin: 0 auto;
@@ -29,21 +29,8 @@ export const DivSubContainer = styled.div`
   box-sizing: border-box;
 `;
 
-export const DivLeftContent = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 70%;
-`;
-
-export const DivRightContent = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  width: 30%;
-`;
-
 export const GreetingsText = styled.h1`
-  font-size: 4rem;
+  font-size: 4.5rem;
   color: white;
 `;
 
@@ -57,11 +44,11 @@ export const AnimatedTextContainer = styled.div`
 
 export const AnimatedText = styled.p`
   color: #5FAAD9;
-  font-size: 4rem;
+  font-size: 4.5rem;
 `;
 
 export const AnimatedDash = styled.span<Props>`
-  font-size: 4rem;
+  font-size: 4.5rem;
   font-weight: 400;
   color: white;
   animation: ${(props) =>
