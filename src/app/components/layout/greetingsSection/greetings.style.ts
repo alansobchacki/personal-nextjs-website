@@ -1,7 +1,7 @@
 import styled, { keyframes, css } from "styled-components";
 
 interface Props {
-  isBlinking?: boolean;
+  $isBlinking?: boolean;
 }
 
 const blinkingDash = keyframes`
@@ -63,7 +63,7 @@ export const AnimatedDash = styled.span<Props>`
   font-size: 4.5rem;
   font-weight: 400;
   animation: ${(props) =>
-    props.isBlinking
+    props.$isBlinking
       ? css`
         ${blinkingDash} 1s infinite
       `

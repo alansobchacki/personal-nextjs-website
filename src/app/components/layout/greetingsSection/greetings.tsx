@@ -85,7 +85,7 @@ export default function GreetingsSection() {
         <AnimatedTextContainer>
           <AnimatedText>
             {text}
-            <AnimatedDash isBlinking={isBlinking}>|</AnimatedDash>
+            <AnimatedDash $isBlinking={isBlinking}>|</AnimatedDash>
           </AnimatedText>
         </AnimatedTextContainer>
       </DivSubContainer>
