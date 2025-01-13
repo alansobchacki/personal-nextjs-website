@@ -16,10 +16,20 @@ export const DivSubContainer = styled.div`
   padding: 0 16px;
   padding-bottom: 25px;
   box-sizing: border-box;
+
+  @media (max-width: 450px) {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 10px;
+  }
 `;
 
 export const Copyright = styled.p`
   font-size: 1.2rem;
+
+  @media (max-width: 450px) {
+    font-size: 0.875rem;
+  }
 `;
 
 export const Email = styled.p`
@@ -28,5 +38,9 @@ export const Email = styled.p`
 
   &:hover {
     opacity: 0.6;
+  }
+
+  @media (max-width: 450px) {
+    font-size: 0.875rem;
   }
 `;

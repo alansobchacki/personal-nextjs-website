@@ -6,6 +6,13 @@ import Footer from "./components/layout/footer/footer";
 export default function Home() {
   return (
     <div style={{ display: "flex", flexDirection: "column", height: "100vh" }}>
+      <div id="# hey, fellow developer! open me! #"
+        dangerouslySetInnerHTML={{
+          __html: `
+            <!-- Let's play a little game: alansobchacki/fun -->
+          `,
+        }}
+      />
       <Header />
       <GreetingsSection />
       <ContactSection />

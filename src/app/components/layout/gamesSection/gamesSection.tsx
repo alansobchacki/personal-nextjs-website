@@ -18,12 +18,14 @@ export default function GamesSection() {
   return (
     <DivContainer>
       <DivSubContainer>
-        <Title>You found the secret area!</Title>
+        <Title>You found the super secret FUN area!</Title>
         <GamesList>
           <Game>
             <TitleContainer>
-              <GameTitle>Hidden Syndicate</GameTitle>
-              <Image src={"/github-mark-light.svg"} width={20} height={20} alt="Github icon" />
+              <GameTitle>Hidden Syndicate ►</GameTitle>
+              <a href="https://github.com/alansobchacki/odin-react-wheres-waldo" target="_blank" rel="noopener noreferrer">
+                <Image src={"/github-mark-light.svg"} width={20} height={20} alt="Github icon" />
+              </a>
             </TitleContainer>
             <GameDescription>Can you find the 3 targets fast enough?</GameDescription>
             <TechStackContainer>
@@ -34,8 +36,10 @@ export default function GamesSection() {
           </Game>
           <Game>
             <TitleContainer>
-              <GameTitle>Memory Game</GameTitle>
-              <Image src={"/github-mark-light.svg"} width={20} height={20} alt="Github icon" />
+              <GameTitle>Memory Game ►</GameTitle>
+              <a href="https://github.com/alansobchacki/odin-react-memory-game" target="_blank" rel="noopener noreferrer">
+                <Image src={"/github-mark-light.svg"} width={20} height={20} alt="Github icon" />
+              </a>
             </TitleContainer>
             <GameDescription>Can you pick 12 cards in a unique sucession?</GameDescription>
             <TechStackContainer>
@@ -45,8 +49,10 @@ export default function GamesSection() {
           </Game>
           <Game>
             <TitleContainer>
-              <GameTitle>Battleship</GameTitle>
-              <Image src={"/github-mark-light.svg"} width={20} height={20} alt="Github icon" />
+              <GameTitle>Battleship ►</GameTitle>
+              <a href="https://github.com/alansobchacki/odin-js-battleship" target="_blank" rel="noopener noreferrer">
+                <Image src={"/github-mark-light.svg"} width={20} height={20} alt="Github icon" />
+              </a>
             </TitleContainer>
             <GameDescription>Can you sink the enemy ships before they sink yours?</GameDescription>
             <TechStackContainer>
@@ -55,11 +61,13 @@ export default function GamesSection() {
           </Game>
           <Game>
             <TitleContainer>
-              <GameTitle>Chess *</GameTitle>
-              <Image src={"/github-mark-light.svg"} width={20} height={20} alt="Github icon" />
+              <GameTitle>Chess* ►</GameTitle>
+              <a href="https://github.com/alansobchacki/odin-chess" target="_blank" rel="noopener noreferrer">
+                <Image src={"/github-mark-light.svg"} width={20} height={20} alt="Github icon" />
+              </a>
             </TitleContainer>
             <GameDescription>How about a match of chess against... yourself?</GameDescription>
-            <GameObservation>* requires a Replit account</GameObservation>
+            <GameObservation>*requires a Replit account</GameObservation>
             <TechStackContainer>
               <Image src="/ruby.png" width={32} height={32} alt="Ruby icon" />
             </TechStackContainer>

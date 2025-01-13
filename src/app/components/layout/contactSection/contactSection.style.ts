@@ -5,6 +5,11 @@ export const DivContainer = styled.section`
   padding-top: 75px;
   padding-bottom: 25px;
   margin-top: auto;
+
+  @media (max-width: 750px) {
+    padding-top: 15px;
+    margin-top: 40px;
+  }
 `;
 
 export const DivSubContainer = styled.div`
@@ -20,10 +25,18 @@ export const DivSubContainer = styled.div`
 
 export const Title = styled.h2`
   font-size: 1.5rem;
+
+  @media (max-width: 450px) {
+    font-size: 1.1rem;
+  }
 `;
 
 export const Description = styled.p`
   font-size: 1.1rem;
+
+  @media (max-width: 450px) {
+    font-size: 0.875rem;
+  }
 `;
 
 export const SocialIcons = styled.div`

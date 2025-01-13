@@ -17,6 +17,11 @@ export const DivContainer = styled.section`
   display: flex;
   padding-top: 75px;
   padding-bottom: 50px;
+
+  @media (max-width: 750px) {
+    padding-top: 25px;
+    padding-bottom: 15px;
+  }
 `;
 
 export const DivSubContainer = styled.div`
@@ -31,6 +36,10 @@ export const DivSubContainer = styled.div`
 
 export const GreetingsText = styled.h1`
   font-size: 4.5rem;
+
+  @media (max-width: 750px) {
+    font-size: 3rem;
+  }
 `;
 
 export const NameHighlight = styled.span`
@@ -44,6 +53,10 @@ export const AnimatedTextContainer = styled.div`
 export const AnimatedText = styled.p`
   color: #007EBB;
   font-size: 4.5rem;
+
+  @media (max-width: 750px) {
+    font-size: 3rem;
+  }
 `;
 
 export const AnimatedDash = styled.span<Props>`
@@ -56,6 +69,10 @@ export const AnimatedDash = styled.span<Props>`
       `
       : "none"};
   animation-timing-function: steps(1, end);
+
+  @media (max-width: 750px) {
+    font-size: 3rem;
+  }
 `;
 
 export const ImageWrapper = styled.div`

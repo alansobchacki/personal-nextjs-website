@@ -2,10 +2,9 @@ import styled from "styled-components";
 
 export const DivContainer = styled.section`
   display: flex;
-  height: 100vh;
   padding-top: 15px;
   padding-bottom: 15px;
-  background-color:rgb(8, 20, 10);
+  height: 100%;
 `;
 
 export const DivSubContainer = styled.div`
@@ -29,14 +28,16 @@ export const TitleContainer = styled.div`
 
 export const Title = styled.h2`
   font-size: 1.5rem;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
+  text-align: center;
 `;
 
 export const GamesList = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 25px;
+  gap: 35px;
+  padding-bottom: 35px;
   list-style: none;
 `;
 
@@ -49,8 +50,20 @@ export const Game = styled.div`
   transition: opacity 0.5s ease;
 `;
 
-export const GameTitle = styled.h3`
-  font-size: 1.2rem;
+export const GameTitle = styled.button`
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  background: none;
+  border: 2px solid white;
+  color: white;
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    opacity: 0.5;
+  }
 `;
 
 export const GameDescription = styled.p`

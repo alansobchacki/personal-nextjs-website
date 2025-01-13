@@ -31,4 +31,8 @@ export const ListItem = styled.li`
   &:hover {
     opacity: 0.6;
   }
+
+  @media (max-width: 450px) {
+    font-size: 0.875rem;
+  }
 `;
