@@ -22,7 +22,9 @@ export default function GamesSection() {
         <GamesList>
           <Game>
             <TitleContainer>
-              <GameTitle>Hidden Syndicate ►</GameTitle>
+              <a href="https://odin-react-wheres-waldo.vercel.app/game" target="_blank" rel="noopener noreferrer">
+                <GameTitle>Hidden Syndicate ►</GameTitle>
+              </a>
               <a href="https://github.com/alansobchacki/odin-react-wheres-waldo" target="_blank" rel="noopener noreferrer">
                 <Image src={"/github-mark-light.svg"} width={20} height={20} alt="Github icon" />
               </a>
@@ -36,7 +38,9 @@ export default function GamesSection() {
           </Game>
           <Game>
             <TitleContainer>
-              <GameTitle>Memory Game ►</GameTitle>
+              <a href="https://odin-react-memory-game.vercel.app/" target="_blank" rel="noopener noreferer">
+                <GameTitle>Memory Game ►</GameTitle>
+              </a>
               <a href="https://github.com/alansobchacki/odin-react-memory-game" target="_blank" rel="noopener noreferrer">
                 <Image src={"/github-mark-light.svg"} width={20} height={20} alt="Github icon" />
               </a>
@@ -49,7 +53,9 @@ export default function GamesSection() {
           </Game>
           <Game>
             <TitleContainer>
-              <GameTitle>Battleship ►</GameTitle>
+              <a href="https://alansobchacki.github.io/odin-js-battleship/" target="_blank" rel="noopener noreferer">
+                <GameTitle>Battleship ►</GameTitle>
+              </a>
               <a href="https://github.com/alansobchacki/odin-js-battleship" target="_blank" rel="noopener noreferrer">
                 <Image src={"/github-mark-light.svg"} width={20} height={20} alt="Github icon" />
               </a>
@@ -61,7 +67,9 @@ export default function GamesSection() {
           </Game>
           <Game>
             <TitleContainer>
-              <GameTitle>Chess* ►</GameTitle>
+              <a href="https://replit.com/@AlanSobchacki/odin-chess" target="_blank" rel="noopener noreferer">
+                <GameTitle>Chess* ►</GameTitle>
+              </a>
               <a href="https://github.com/alansobchacki/odin-chess" target="_blank" rel="noopener noreferrer">
                 <Image src={"/github-mark-light.svg"} width={20} height={20} alt="Github icon" />
               </a>
