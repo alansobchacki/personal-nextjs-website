@@ -17,12 +17,16 @@ export default function GreetingsSection() {
     "Software Engineer",
     "Web Developer",
     "React Developer",
+    "Frontend Developer",
     "Ruby Enthusiast",
     "Graphic Designer",
     "Content Creator",
+    "Figma Tinkerer",
     "Former Lawyer",
     "Boardgame Enthusiast",
-    "Blue-belt Judo Fighter",
+    "Blue Belt Judoka",
+    "Lvl 38 Cleric",
+    "Below Average Swimmer"
   ];
 
   const [text, setText] = useState("");
