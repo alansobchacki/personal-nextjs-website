@@ -14,9 +14,11 @@ export default function Home() {
         }}
       />
       <Header />
-      <GreetingsSection />
-      <ContactSection />
-      <Footer />
+      <div style={{ display: "flex", flexDirection: "column", justifyContent: "flex-end", height: "100%"}}>
+        <GreetingsSection />
+        <ContactSection />
+        <Footer />
+      </div>
     </div>
   );
 }

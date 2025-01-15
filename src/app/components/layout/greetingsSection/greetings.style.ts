@@ -40,6 +40,11 @@ export const GreetingsText = styled.h1`
   @media (max-width: 750px) {
     font-size: 3rem;
   }
+
+  @media (max-width: 450px) {
+    font-size: 4rem;
+    text-align: center;
+  }
 `;
 
 export const NameHighlight = styled.span`
@@ -56,6 +61,11 @@ export const AnimatedText = styled.p`
 
   @media (max-width: 750px) {
     font-size: 3rem;
+  }
+
+  @media (max-width: 450px) {
+    font-size: 4rem;
+    text-align: center;
   }
 `;
 
