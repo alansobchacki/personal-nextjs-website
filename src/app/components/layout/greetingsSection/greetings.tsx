@@ -25,8 +25,10 @@ export default function GreetingsSection() {
     "Former Lawyer",
     "Boardgame Enthusiast",
     "Blue Belt Judoka",
-    "Lvl 38 Cleric",
-    "Below Average Swimmer"
+    "Lvl 38 Priest of Lathander",
+    "Below Average Swimmer",
+    "Casual Lifter",
+    "500-rated chess player"
   ];
 
   const [text, setText] = useState("");
