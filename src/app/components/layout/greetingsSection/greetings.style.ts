@@ -17,10 +17,15 @@ export const DivContainer = styled.section`
   display: flex;
   padding-top: 75px;
   padding-bottom: 50px;
+  transition: padding 0.3s ease;
 
   @media (max-width: 750px) {
     padding-top: 25px;
     padding-bottom: 15px;
+  }
+
+  @media (max-width: 450px) {
+    padding-top: 125px;
   }
 `;
 
@@ -82,6 +87,10 @@ export const AnimatedDash = styled.span<Props>`
 
   @media (max-width: 750px) {
     font-size: 3rem;
+  }
+
+  @media (max-width: 450px) {
+    font-size: 4rem;
   }
 `;
 
