@@ -68,19 +68,49 @@ export default function GamesSection() {
           <Game>
             <TitleContainer>
               <a href="https://replit.com/@AlanSobchacki/odin-chess" target="_blank" rel="noopener noreferer">
-                <GameTitle>Chess* ►</GameTitle>
+                <GameTitle>Chess * ►</GameTitle>
               </a>
               <a href="https://github.com/alansobchacki/odin-chess" target="_blank" rel="noopener noreferrer">
                 <Image src={"/github-mark-light.svg"} width={20} height={20} alt="Github icon" />
               </a>
             </TitleContainer>
             <GameDescription>How about a match of chess against... yourself?</GameDescription>
-            <GameObservation>*requires a Replit account</GameObservation>
+            <TechStackContainer>
+              <Image src="/ruby.png" width={32} height={32} alt="Ruby icon" />
+            </TechStackContainer>
+          </Game>
+          <Game>
+            <TitleContainer>
+              <a href="https://replit.com/@AlanSobchacki/odin-hangman" target="_blank" rel="noopener noreferer">
+                <GameTitle>Hangman * ►</GameTitle>
+              </a>
+              <a href="https://github.com/alansobchacki/odin_hangman" target="_blank" rel="noopener noreferrer">
+                <Image src={"/github-mark-light.svg"} width={20} height={20} alt="Github icon" />
+              </a>
+            </TitleContainer>
+            <GameDescription>Can you guess the word before the hangman gets hanged(?)</GameDescription>
+            <TechStackContainer>
+              <Image src="/ruby.png" width={32} height={32} alt="Ruby icon" />
+            </TechStackContainer>
+          </Game>
+          <Game>
+            <TitleContainer>
+              <a href="https://replit.com/@AlanSobchacki/odin-mastermind" target="_blank" rel="noopener noreferer">
+                <GameTitle>Mastermind * ►</GameTitle>
+              </a>
+              <a href="https://github.com/alansobchacki/odin-mastermind" target="_blank" rel="noopener noreferrer">
+                <Image src={"/github-mark-light.svg"} width={20} height={20} alt="Github icon" />
+              </a>
+            </TitleContainer>
+            <GameDescription>
+              Crack the code or build a code against your robotic opponent.
+            </GameDescription>
             <TechStackContainer>
               <Image src="/ruby.png" width={32} height={32} alt="Ruby icon" />
             </TechStackContainer>
           </Game>
         </GamesList>
+        <GameObservation>*requires a Replit account</GameObservation>
       </DivSubContainer>
     </DivContainer>
   )
