@@ -25,7 +25,7 @@ export const DivContainer = styled.section`
   }
 
   @media (max-width: 450px) {
-    padding-top: 125px;
+    padding-top: 25px;
   }
 `;
 
@@ -43,12 +43,7 @@ export const GreetingsText = styled.h1`
   font-size: 4.5rem;
 
   @media (max-width: 750px) {
-    font-size: 3rem;
-  }
-
-  @media (max-width: 450px) {
     font-size: 4rem;
-    text-align: center;
   }
 `;
 
@@ -65,12 +60,7 @@ export const AnimatedText = styled.p`
   font-size: 4.5rem;
 
   @media (max-width: 750px) {
-    font-size: 3rem;
-  }
-
-  @media (max-width: 450px) {
     font-size: 4rem;
-    text-align: center;
   }
 `;
 
@@ -86,10 +76,6 @@ export const AnimatedDash = styled.span<Props>`
   animation-timing-function: steps(1, end);
 
   @media (max-width: 750px) {
-    font-size: 3rem;
-  }
-
-  @media (max-width: 450px) {
     font-size: 4rem;
   }
 `;
