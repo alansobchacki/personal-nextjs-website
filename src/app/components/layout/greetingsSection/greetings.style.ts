@@ -20,12 +20,7 @@ export const DivContainer = styled.section`
   transition: padding 0.3s ease;
 
   @media (max-width: 750px) {
-    padding-top: 25px;
     padding-bottom: 15px;
-  }
-
-  @media (max-width: 450px) {
-    padding-top: 25px;
   }
 `;
 
