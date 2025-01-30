@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Head from 'next/head';
 import { Geist, Geist_Mono } from "next/font/google";
 import { ThemeProvider } from './context/themeContext';
+import { Analytics } from "@vercel/analytics/react"
 import StyledComponentsRegistry from '../../lib/registry'
 import "./globals.css";
 
@@ -34,6 +35,7 @@ export default function RootLayout({
         <ThemeProvider>
           <StyledComponentsRegistry>
             {children}
+            <Analytics />
           </StyledComponentsRegistry>
         </ThemeProvider>
       </body>
