@@ -15,7 +15,7 @@ const blinkingDash = keyframes`
 
 export const DivContainer = styled.section`
   display: flex;
-  padding-top: 75px;
+  padding-top: 50px;
   padding-bottom: 50px;
   transition: padding 0.3s ease;
 

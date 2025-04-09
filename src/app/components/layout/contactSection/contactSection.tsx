@@ -36,6 +36,9 @@ export default function ContactSection() {
           <a href="mailto:a.sobchack@gmail.com">
             <Image src="/gmail.svg" alt="Gmail icon" width={24} height={24} />
           </a>
+          <a href="https://singularity-gules.vercel.app/" target="_blank" rel="noopener noreferrer">
+            <Image src="/singularity.png" alt="Singularity icon" width={24} height={24} />
+          </a>
         </SocialIcons>
       </DivSubContainer>
     </DivContainer>

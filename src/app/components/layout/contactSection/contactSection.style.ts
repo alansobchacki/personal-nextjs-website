@@ -3,12 +3,10 @@ import styled from "styled-components";
 export const DivContainer = styled.section`
   display: flex;
   padding-top: 75px;
-  padding-bottom: 25px;
-  margin-top: auto;
+  padding-bottom: 50px;
 
   @media (max-width: 750px) {
     padding-top: 15px;
-    margin-top: 40px;
   }
 `;
 
