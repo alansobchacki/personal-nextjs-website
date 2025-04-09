@@ -14,9 +14,6 @@ import LightButton from '../../common/lightButton/lightButton';
       <DivSubContainer>
         <LightButton />
         <StyledUnorderedList>
-          <a href="https://www.redbubble.com/people/Ripper19/shop" target="_blank" rel="noopener noreferrer">
-            <ListItem>Merch</ListItem>
-          </a>
           <a href="https://github.com/alansobchacki" target="_blank" rel="noopener noreferrer">
             <ListItem>Projects</ListItem>
           </a>
