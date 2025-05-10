@@ -34,16 +34,12 @@ export const DivSubContainer = styled.div`
   box-sizing: border-box;
 `;
 
-export const GreetingsText = styled.h1`
-  font-size: 4.5rem;
+export const Name = styled.h1`
+  font-size: 1.5rem;
 
   @media (max-width: 750px) {
     font-size: 4rem;
   }
-`;
-
-export const NameHighlight = styled.span`
-  color: #007EBB !important;
 `;
 
 export const AnimatedTextContainer = styled.div`
@@ -51,8 +47,12 @@ export const AnimatedTextContainer = styled.div`
 `;
 
 export const AnimatedText = styled.p`
-  color: #007EBB;
-  font-size: 4.5rem;
+  color:rgb(186, 188, 196);
+  font-size: 1.5rem;
+
+  body.light & {
+    color:rgb(83, 80, 80);
+  }
 
   @media (max-width: 750px) {
     font-size: 4rem;
@@ -60,7 +60,7 @@ export const AnimatedText = styled.p`
 `;
 
 export const AnimatedDash = styled.span<Props>`
-  font-size: 4.5rem;
+  font-size: 1.5rem;
   font-weight: 400;
   animation: ${(props) =>
     props.$isBlinking

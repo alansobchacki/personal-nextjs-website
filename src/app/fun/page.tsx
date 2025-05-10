@@ -1,4 +1,4 @@
-import GamesSection from "../components/layout/gamesSection/gamesSection";
+import GamesSection from "../components/gamesSection/gamesSection";
 
 export default function Fun() {
   return (

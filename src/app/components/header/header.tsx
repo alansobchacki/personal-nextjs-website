@@ -6,7 +6,7 @@ import {
   StyledUnorderedList,
   ListItem
  } from "./header.style";
-import LightButton from '../../common/lightButton/lightButton';
+import LightButton from '../lightButton/lightButton';
 
  export default function Header() { 
   return (

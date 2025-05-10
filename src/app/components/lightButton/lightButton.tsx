@@ -1,6 +1,6 @@
 'use client'
 
-import { useTheme } from '../../../context/themeContext';
+import { useTheme } from '../../context/themeContext';
 import { DivContainer, StyledButton } from './lightButton.style';
 
 export default function LightButton() {

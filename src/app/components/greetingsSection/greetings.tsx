@@ -3,8 +3,7 @@
 import { 
   DivContainer,
   DivSubContainer,
-  GreetingsText,
-  NameHighlight,
+  Name,
   AnimatedTextContainer,
   AnimatedText, 
   AnimatedDash,
@@ -89,7 +88,7 @@ export default function GreetingsSection() {
   return (
     <DivContainer id="greetings-section">
       <DivSubContainer>
-        <GreetingsText>Hi, I&apos;m <NameHighlight>Alan</NameHighlight>. I&apos;m a</GreetingsText>
+        <Name>Alan Sobchacki</Name>
         <AnimatedTextContainer>
           <AnimatedText>
             {text}
