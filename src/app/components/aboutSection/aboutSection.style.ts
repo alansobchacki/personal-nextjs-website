@@ -4,10 +4,6 @@ export const DivContainer = styled.section`
   display: flex;
   padding-top: 15px;
   padding-bottom: 50px;
-
-  @media (max-width: 750px) {
-    padding-top: 15px;
-  }
 `;
 
 export const DivSubContainer = styled.div`
@@ -25,10 +21,6 @@ export const Description = styled.p`
   font-size: 1.1rem;
   line-height: 1.5;
   padding-bottom: 20px;
-
-  @media (max-width: 450px) {
-    font-size: 0.875rem;
-  }
 `;
 
 export const CustomAnchor = styled.a`

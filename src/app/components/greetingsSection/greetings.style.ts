@@ -16,12 +16,7 @@ const blinkingDash = keyframes`
 export const DivContainer = styled.section`
   display: flex;
   padding-top: 50px;
-  padding-bottom: 50px;
-  transition: padding 0.3s ease;
-
-  @media (max-width: 750px) {
-    padding-bottom: 15px;
-  }
+  padding-bottom: 25px;
 `;
 
 export const DivSubContainer = styled.div`
@@ -36,10 +31,6 @@ export const DivSubContainer = styled.div`
 
 export const Name = styled.h1`
   font-size: 1.5rem;
-
-  @media (max-width: 750px) {
-    font-size: 4rem;
-  }
 `;
 
 export const AnimatedTextContainer = styled.div`
@@ -53,10 +44,6 @@ export const AnimatedText = styled.p`
   body.light & {
     color:rgb(83, 80, 80);
   }
-
-  @media (max-width: 750px) {
-    font-size: 4rem;
-  }
 `;
 
 export const AnimatedDash = styled.span<Props>`
@@ -69,10 +56,6 @@ export const AnimatedDash = styled.span<Props>`
       `
       : "none"};
   animation-timing-function: steps(1, end);
-
-  @media (max-width: 750px) {
-    font-size: 4rem;
-  }
 `;
 
 export const ImageWrapper = styled.div`

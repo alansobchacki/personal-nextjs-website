@@ -18,6 +18,9 @@ export default function AboutSection() {
     <DivContainer id="about-section">
       <DivSubContainer>
         <Description>
+          👋
+        </Description>
+        <Description>
           I&apos;m currently working at{" "}
           <CustomAnchor
             href="https://www.linkedin.com/company/hive-fuse/"
@@ -31,7 +34,10 @@ export default function AboutSection() {
         </Description>
         <Description>
           When I&apos;m not programming, you will find me playing boardgames,
-          grilling, or just chilling. If you want to get in touch with me about
+          grilling, swimming, or just chilling.
+        </Description>
+        <Description>
+          If you want to get in touch with me about
           something, feel free to reach out on social media:
         </Description>
 
