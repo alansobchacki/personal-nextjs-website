@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const DivContainer = styled.section`
   display: flex;
-  padding-top: 75px;
+  padding-top: 15px;
   padding-bottom: 50px;
 
   @media (max-width: 750px) {
@@ -23,8 +23,34 @@ export const DivSubContainer = styled.div`
 
 export const Description = styled.p`
   font-size: 1.1rem;
+  line-height: 1.5;
+  padding-bottom: 20px;
 
   @media (max-width: 450px) {
     font-size: 0.875rem;
+  }
+`;
+
+export const CustomAnchor = styled.a`
+  text-decoration: underline;
+  color: rgb(186, 188, 196);
+
+  body.light & {
+    color: rgb(83, 80, 80);
+  }
+`;
+
+export const SocialIconsContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 20px;
+  gap: 10px;
+`;
+
+export const SocialIcon = styled.a`
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: scale(1.2);
   }
 `;

@@ -1,35 +1,37 @@
-'use client'
+"use client";
 
-import { 
+import {
   DivContainer,
   DivSubContainer,
   Name,
   AnimatedTextContainer,
-  AnimatedText, 
+  AnimatedText,
   AnimatedDash,
 } from "./greetings.style";
 import { useState, useEffect } from "react";
 
 export default function GreetingsSection() {
   const phrases = [
-    "Full Stack Developer",
     "Software Engineer",
+    "Full Stack Developer",
     "Web Developer",
     "React Developer",
-    "Frontend Developer",
-    "Lvl 38 Priest of Lathander",
+    "Front End Developer",
     "Next.js Developer",
     "Nest.js Developer",
     "Ruby Enthusiast",
     "Boardgame Enthusiast",
-    "Graphic Designer",
-    "Content Creator",
-    "Figma Tinkerer",
-    "Former Lawyer",
     "Blue Belt Judoka",
-    "Below Average Swimmer",
-    "Casual Lifter",
-    "500-rated chess player"
+    "T-shirt Peddler",
+    "Former Lawyer",
+    "Lvl 36 Priest of Lathander",
+    "Are you still reading this?",
+    "Probably not",
+    "Anyway, you're a very patient person",
+    "Or just curious",
+    "You know what?",
+    "Try pressing the light bulb 10 times",
+    "Have fun!",
   ];
 
   const [text, setText] = useState("");
@@ -50,12 +52,10 @@ export default function GreetingsSection() {
       timer = setTimeout(() => {
         setIsPaused(false);
       }, startTime);
-
     } else if (!isDeleting && text === currentPhrase) {
       timer = setTimeout(() => {
         setIsDeleting(true);
       }, pauseTime);
-
     } else if (isDeleting && text === "") {
       setIsDeleting(false);
       setIsPaused(true);
@@ -65,24 +65,26 @@ export default function GreetingsSection() {
       } else {
         setPhraseIndex(0);
       }
-
     } else {
-      timer = setTimeout(() => {
-        const updatedText = isDeleting
-          ? currentPhrase.substring(0, text.length - 1)
-          : currentPhrase.substring(0, text.length + 1);
+      timer = setTimeout(
+        () => {
+          const updatedText = isDeleting
+            ? currentPhrase.substring(0, text.length - 1)
+            : currentPhrase.substring(0, text.length + 1);
 
-        setText(updatedText);
-      }, isDeleting ? deletingSpeed : typingSpeed);
+          setText(updatedText);
+        },
+        isDeleting ? deletingSpeed : typingSpeed
+      );
     }
 
     return () => clearTimeout(timer);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [text, isDeleting, phraseIndex, isPaused]);
 
   useEffect(() => {
     setIsBlinking(text === phrases[phraseIndex] || text.length < 2);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [text]);
 
   return (
