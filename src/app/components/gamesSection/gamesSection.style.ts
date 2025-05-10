@@ -34,9 +34,9 @@ export const Title = styled.h2`
 
 export const GamesList = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: flex-start;
-  gap: 35px;
+  gap: 15px;
   padding-bottom: 35px;
   list-style: none;
 `;
@@ -44,11 +44,33 @@ export const GamesList = styled.div`
 export const Game = styled.div`
   display: flex;
   flex-direction: column;
-  width: 100%;
+  justify-content: space-between;
+  border-radius: 12px;
+  width: 30%;
+  padding: 20px;
+  height: 200px;
   gap: 10px;
   font-size: 1.2rem;
-  transition: opacity 0.5s ease;
+  transition: transform 0.3s ease, border 0.3s ease;
+  cursor: pointer;
+
+  background: rgb(39, 45, 70);
+  body.light & {
+    background: rgb(97, 128, 212);
+  }
+
+  border: 2px solid rgb(178, 201, 214);
+  body.light & {
+    border: 2px solid white;
+  }
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border: 2px solid rgb(97, 147, 212);
+  }
 `;
+
 
 export const GameTitle = styled.button`
   font-size: 1rem;
