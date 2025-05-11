@@ -4,7 +4,6 @@ export const DivContainer = styled.section`
   display: flex;
   padding-top: 15px;
   padding-bottom: 15px;
-  height: 100%;
 `;
 
 export const DivSubContainer = styled.div`
@@ -21,6 +20,11 @@ export const DivSubContainer = styled.div`
 
 export const TitleContainer = styled.div`
   display: flex;
+  margin-top: 15px;
+`;
+
+export const GameTitleContainer = styled.div`
+  display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
@@ -35,68 +39,88 @@ export const Title = styled.h2`
 export const GamesList = styled.div`
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
+  justify-content: center;
   gap: 15px;
   padding-bottom: 35px;
   list-style: none;
 `;
 
 export const Game = styled.div`
+  width: 30%;
+  min-height: 200px;
+  min-width: 175px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border-radius: 12px;
-  width: 30%;
-  padding: 20px;
-  height: 200px;
   gap: 10px;
   font-size: 1.2rem;
+  border-radius: 12px;
+  overflow: hidden;
   transition: transform 0.3s ease, border 0.3s ease;
-  cursor: pointer;
 
-  background: rgb(39, 45, 70);
-  body.light & {
-    background: rgb(97, 128, 212);
-  }
+  background: rgb(36, 40, 54);
+  border: 4px solid rgb(178, 201, 214);
 
-  border: 2px solid rgb(178, 201, 214);
   body.light & {
-    border: 2px solid white;
+    background: rgba(255, 255, 255, 0.6);
   }
 
   &:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    border: 2px solid rgb(97, 147, 212);
+    border: 4px solid rgb(97, 147, 212);
+  }
+
+  @media (max-width: 768px) {
+    width: 45%;
+  }
+
+  @media (max-width: 480px) {
+    width: 100%;
   }
 `;
 
-
 export const GameTitle = styled.button`
   font-size: 1rem;
-  font-weight: 700;
-  padding: 10px;
-  border-radius: 10px;
+  font-weight: 600;
+  padding: 10px 16px;
+  border-radius: 12px;
   cursor: pointer;
-  background: none;
-  border: 2px solid white;
-  color: white;
-  transition: opacity 0.3s ease;
+  border: none;
+  transition: all 0.3s ease;
 
-  &:hover {
-    opacity: 0.5;
+  background: linear-gradient(135deg, #5f8fd3, #3a66a3);
+  color: white;
+
+  body.light & {
+    background: linear-gradient(135deg, #9cc6f2, #6591d9);
+    color: #0e1a2b;
   }
 `;
 
 export const GameDescription = styled.p`
+  font-size: 1rem;
+
+  body.light & {
+    color: black;
+  }
 `;
 
 export const GameObservation = styled.p`
   font-size: 0.8rem;
   margin-top: -5px;
+  text-align: center;
 `;
 
 export const TechStackContainer = styled.div`
   display: flex;
   gap: 10px;
+  transition: padding 0.4s ease, border-radius 0.4s ease, background-color 0.4s ease;
+
+  body.light & {
+    background-color:rgb(29, 44, 66);
+    padding: 5px;
+    border-radius: 8px;
+  }
 `;

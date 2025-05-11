@@ -5,9 +5,9 @@ export const DivContainer = styled.header`
   padding-left: 5px;
 `;
 
-export const StyledButton = styled.button<{ Theme: string }>`
-  background-image: ${({ Theme }) =>
-    Theme === 'light' ? "url('light-icon.svg')" : "url('dark-icon.svg')"};
+export const StyledButton = styled.button<{ $Theme: string }>`
+  background-image: ${({ $Theme }) =>
+    $Theme === 'light' ? "url('light-icon.svg')" : "url('dark-icon.svg')"};
   background-size: cover;
   background-position: center;
   background-color: transparent;
