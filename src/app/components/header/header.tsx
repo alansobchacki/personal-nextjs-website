@@ -17,6 +17,13 @@ import LightButton from '../lightButton/lightButton';
           <a href="https://github.com/alansobchacki" target="_blank" rel="noopener noreferrer">
             <ListItem>Projects</ListItem>
           </a>
+          <span>|</span>
+          <a
+            href="/Alan Sobchacki Resume.pdf"
+            download="Alan Sobchacki Resume.pdf"
+          >
+            <ListItem>Resume ↓</ListItem>
+          </a>
         </StyledUnorderedList>
       </DivSubContainer>
     </DivContainer>

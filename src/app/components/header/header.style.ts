@@ -27,6 +27,7 @@ export const StyledUnorderedList = styled.ul`
 export const ListItem = styled.li`
   font-size: 1.2rem;
   transition: opacity 0.5s ease;
+  cursor: pointer;
 
   &:hover {
     opacity: 0.6;
