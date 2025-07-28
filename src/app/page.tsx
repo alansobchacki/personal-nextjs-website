@@ -14,14 +14,11 @@ export default function Home() {
   return (
     <DivContainer>
       <Header />
-      {easterEggActive ? (
-        <GamesSection />
-      ) : (
-        <>
-          <GreetingsSection />
-          <AboutSection />
-        </>
-      )}
+      {easterEggActive && (
+        <GamesSection />)
+      }
+        <GreetingsSection />
+        <AboutSection />
       <Footer />
     </DivContainer>
   );

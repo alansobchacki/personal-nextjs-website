@@ -39,10 +39,16 @@ export const SocialIconsContainer = styled.div`
   gap: 10px;
 `;
 
-export const SocialIcon = styled.a`
-  transition: transform 0.2s ease;
-
-  &:hover {
-    transform: scale(1.2);
-  }
+export const ImageWrapper = styled.a<{ $Theme: string }>`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: ${({ $Theme }) =>
+  $Theme === 'light' ? "lightgray" : "#253146"};
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  transition: background-color 0.5s ease;
 `;
+
+

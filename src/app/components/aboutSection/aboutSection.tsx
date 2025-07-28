@@ -6,7 +6,7 @@ import {
   Description,
   CustomAnchor,
   SocialIconsContainer,
-  SocialIcon,
+  ImageWrapper
 } from "./aboutSection.style";
 import { useTheme } from "../../context/themeContext";
 import Image from "next/image";
@@ -42,11 +42,7 @@ export default function AboutSection() {
         </Description>
 
         <SocialIconsContainer>
-          <SocialIcon
-            href="https://github.com/alansobchacki"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <ImageWrapper $Theme={theme} href="https://github.com/alansobchacki" target="_blank" rel="noopener noreferrer">
             <Image
               src={
                 theme === "dark"
@@ -54,11 +50,12 @@ export default function AboutSection() {
                   : "/github-mark-dark.svg"
               }
               alt="Github icon"
-              width={24}
-              height={24}
+              width={28}
+              height={28}
             />
-          </SocialIcon>
-          <SocialIcon
+          </ImageWrapper>
+
+          <ImageWrapper $Theme={theme}
             href="https://www.linkedin.com/in/alansobchacki/"
             target="_blank"
             rel="noopener noreferrer"
@@ -69,8 +66,8 @@ export default function AboutSection() {
               width={24}
               height={24}
             />
-          </SocialIcon>
-          <SocialIcon
+          </ImageWrapper>
+          <ImageWrapper $Theme={theme}
             href="https://singularity-gules.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
@@ -81,7 +78,7 @@ export default function AboutSection() {
               width={24}
               height={24}
             />
-          </SocialIcon>
+          </ImageWrapper>
         </SocialIconsContainer>
 
         <Description>

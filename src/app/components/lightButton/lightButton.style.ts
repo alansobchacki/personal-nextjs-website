@@ -1,8 +1,15 @@
 import styled from "styled-components";
 
-export const DivContainer = styled.header`
+export const DivContainer = styled.header<{ $Theme: string }>`
   display: flex;
-  padding-left: 5px;
+  justify-content: center;
+  align-items: center;
+  background-color: ${({ $Theme }) =>
+  $Theme === 'light' ? "lightgray" : "#253146"};
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  transition: background-color 0.5s ease;
 `;
 
 export const StyledButton = styled.button<{ $Theme: string }>`

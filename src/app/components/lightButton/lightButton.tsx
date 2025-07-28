@@ -14,8 +14,8 @@ export default function LightButton() {
   };
 
   return (
-    <DivContainer>
-      <StyledButton $Theme={theme} onClick={handleClick} />
+    <DivContainer $Theme={theme} onClick={handleClick}>
+      <StyledButton $Theme={theme} />
     </DivContainer>
   );
 }
