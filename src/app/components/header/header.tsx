@@ -19,6 +19,12 @@ import LightButton from '../lightButton/lightButton';
           >
             <ListItem>Resume</ListItem>
           </a>
+          <a>
+            <ListItem>Projects</ListItem>
+          </a>
+          <a>
+            <ListItem>Merch</ListItem>
+          </a>
         </StyledUnorderedList>
         <LightButton />
       </DivSubContainer>

@@ -10,6 +10,9 @@ import {
 } from "./aboutSection.style";
 import { useTheme } from "../../context/themeContext";
 import Image from "next/image";
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 
 export default function AboutSection() {
   const { theme } = useTheme();
@@ -38,40 +41,23 @@ export default function AboutSection() {
         </Description>
         <Description>
           If you want to get in touch with me about
-          something, feel free to reach out on social media:
+          something, feel free to reach out:
         </Description>
 
         <SocialIconsContainer>
           <ImageWrapper $Theme={theme} href="https://github.com/alansobchacki" target="_blank" rel="noopener noreferrer">
-            <Image
-              src={
-                theme === "dark"
-                  ? "/github-mark-light.svg"
-                  : "/github-mark-dark.svg"
-              }
-              alt="Github icon"
-              width={28}
-              height={28}
-            />
+            <GitHubIcon sx={{ fontSize: 28 }}/>
           </ImageWrapper>
 
-          <ImageWrapper $Theme={theme}
-            href="https://www.linkedin.com/in/alansobchacki/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              src="/linkedin.svg"
-              alt="LinkedIn icon"
-              width={24}
-              height={24}
-            />
+          <ImageWrapper $Theme={theme} href="https://www.linkedin.com/in/alansobchacki/" target="_blank" rel="noopener noreferrer">
+            <LinkedInIcon sx={{ fontSize: 28 }}/>
           </ImageWrapper>
-          <ImageWrapper $Theme={theme}
-            href="https://singularity-gules.vercel.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+
+          <ImageWrapper $Theme={theme} href="mailto:a.sobchack@gmail.com" target="_blank" rel="noopener noreferrer">
+            <EmailOutlinedIcon sx={{ fontSize: 28 }} />
+          </ImageWrapper>
+
+          <ImageWrapper $Theme={theme} href="https://singularity-gules.vercel.app/" target="_blank" rel="noopener noreferrer">
             <Image
               src="/singularity.png"
               alt="Singularity icon"
@@ -80,11 +66,6 @@ export default function AboutSection() {
             />
           </ImageWrapper>
         </SocialIconsContainer>
-
-        <Description>
-          Or just send me an{" "}
-          <CustomAnchor href="mailto:a.sobchack@gmail.com">email</CustomAnchor>.
-        </Description>
       </DivSubContainer>
     </DivContainer>
   );

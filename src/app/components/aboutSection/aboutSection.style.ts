@@ -24,7 +24,6 @@ export const Description = styled.p`
 `;
 
 export const CustomAnchor = styled.a`
-  text-decoration: underline;
   color: rgb(186, 188, 196);
 
   body.light & {
@@ -36,7 +35,7 @@ export const SocialIconsContainer = styled.div`
   display: flex;
   flex-direction: row;
   padding-bottom: 20px;
-  gap: 10px;
+  gap: 20px;
 `;
 
 export const ImageWrapper = styled.a<{ $Theme: string }>`
@@ -48,7 +47,11 @@ export const ImageWrapper = styled.a<{ $Theme: string }>`
   width: 64px;
   height: 64px;
   border-radius: 50%;
-  transition: background-color 0.5s ease;
+  transition: opacity 0.5s ease;
+
+  &:hover {
+    opacity: 0.8;
+  }
 `;
 
 

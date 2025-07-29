@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const DivContainer = styled.header`
   display: flex;
   padding-top: 15px;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
   border-bottom: 2px solid #253146;
   width: 100%;
 `;
@@ -14,10 +14,9 @@ export const DivSubContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  max-width: 1080px;
   max-height: 50px;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0 32px;
   box-sizing: border-box;
 `;
 

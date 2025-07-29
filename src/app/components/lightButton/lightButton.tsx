@@ -1,8 +1,10 @@
-'use client'
+'use client';
 
 import { useTheme } from '../../context/themeContext';
 import { useEasterEgg } from '../../context/easterEggContext';
-import { DivContainer, StyledButton } from './lightButton.style';
+import { DivContainer } from './lightButton.style';
+import LightModeOutlinedIcon from '@mui/icons-material/LightModeOutlined';
+import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
 
 export default function LightButton() {
   const { theme, toggleTheme } = useTheme();
@@ -15,7 +17,11 @@ export default function LightButton() {
 
   return (
     <DivContainer $Theme={theme} onClick={handleClick}>
-      <StyledButton $Theme={theme} />
+      {theme === 'dark' ? (
+        <LightModeOutlinedIcon sx={{ fontSize: 25 }} />
+      ) : (
+        <DarkModeOutlinedIcon sx={{ fontSize: 25, color: 'black' }} />
+      )}
     </DivContainer>
   );
 }
