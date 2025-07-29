@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const DivContainer = styled.section`
   display: flex;
+  flex-direction: column;
   padding-top: 50px;
   padding-bottom: 25px;
   width: 100%;
@@ -16,5 +17,5 @@ export const DivSubContainer = styled.div`
   margin: 0 auto;
   padding: 0 16px;
   box-sizing: border-box;
-  gap: 25px;
+  gap: 35px;
 `;

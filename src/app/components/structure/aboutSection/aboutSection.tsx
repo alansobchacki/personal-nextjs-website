@@ -41,7 +41,7 @@ export default function AboutSection() {
         </Description>
         <Description>
           If you want to get in touch with me about
-          something, feel free to reach out:
+          something, feel free to reach out.
         </Description>
 
         <SocialIconsContainer>
@@ -59,7 +59,7 @@ export default function AboutSection() {
         </SocialIconsContainer>
 
         <Description>
-          Or you can check out some of the cool stuff I built for fun:
+          Or maybe check out some of the cool stuff I built on my spare time:
         </Description>
       </DivSubContainer>
     </DivContainer>

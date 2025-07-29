@@ -4,9 +4,11 @@ import Image from 'next/image';
 type ProjectCardProps = {
   title: string;
   description: string;
+  image: string;
+  alt?: string;
 };
 
-export default function ProjectCard({ title, description }: ProjectCardProps) {
+export default function ProjectCard({ title, description, image, alt }: ProjectCardProps) {
   return (
     <DivContainer>
       <LeftContainer>
@@ -15,8 +17,8 @@ export default function ProjectCard({ title, description }: ProjectCardProps) {
       </LeftContainer>
       <RightContainer>
         <Image
-          src="/singularity-preview.gif"
-          alt="Project Alpha Preview"
+          src={image}
+          alt={alt || `${title}'s preview image`}
           width={320}
           height={180}
           style={{

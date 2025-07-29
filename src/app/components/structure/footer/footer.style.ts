@@ -5,6 +5,7 @@ export const DivContainer = styled.footer`
   justify-content: center;
   margin-top: auto;
   padding-bottom: 25px;
+  padding-top: 25px;
   width: 100%;
 `;
 

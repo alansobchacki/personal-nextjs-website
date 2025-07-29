@@ -19,8 +19,8 @@ import LightButton from '../../ui/lightButton/lightButton';
           >
             <ListItem>Resume</ListItem>
           </a>
-          <a>
-            <ListItem>Merch</ListItem>
+          <a href="#projects-section">
+            <ListItem>Projects</ListItem>
           </a>
         </StyledUnorderedList>
         <LightButton />
