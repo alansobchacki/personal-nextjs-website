@@ -5,7 +5,7 @@ export const DivContainer = styled.header<{ $Theme: string }>`
   justify-content: center;
   align-items: center;
   background-color: ${({ $Theme }) =>
-    $Theme === 'light' ? 'lightgray' : '#253146'};
+    $Theme === 'light' ? '#eeeeee' : '#253146'};
   width: 42px;
   height: 42px;
   border-radius: 50%;

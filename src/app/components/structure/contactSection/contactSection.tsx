@@ -7,7 +7,7 @@ import {
   Description,
   SocialIcons,
 } from './contactSection.style';
-import { useTheme } from '../../context/themeContext';
+import { useTheme } from '../../../context/themeContext';
 import Image from 'next/image';
 
 export default function ContactSection() {

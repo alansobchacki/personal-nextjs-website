@@ -43,7 +43,7 @@ export const ImageWrapper = styled.a<{ $Theme: string }>`
   justify-content: center;
   align-items: center;
   background-color: ${({ $Theme }) =>
-  $Theme === 'light' ? "lightgray" : "#253146"};
+  $Theme === 'light' ? "#eeeeee" : "#253146"};
   width: 64px;
   height: 64px;
   border-radius: 50%;

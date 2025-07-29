@@ -6,7 +6,7 @@ import {
   StyledUnorderedList,
   ListItem
  } from "./header.style";
-import LightButton from '../lightButton/lightButton';
+import LightButton from '../../ui/lightButton/lightButton';
 
  export default function Header() { 
   return (
@@ -18,9 +18,6 @@ import LightButton from '../lightButton/lightButton';
             download="Alan Sobchacki Resume.pdf"
           >
             <ListItem>Resume</ListItem>
-          </a>
-          <a>
-            <ListItem>Projects</ListItem>
           </a>
           <a>
             <ListItem>Merch</ListItem>

@@ -8,8 +8,7 @@ import {
   SocialIconsContainer,
   ImageWrapper
 } from "./aboutSection.style";
-import { useTheme } from "../../context/themeContext";
-import Image from "next/image";
+import { useTheme } from "../../../context/themeContext";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
@@ -37,7 +36,8 @@ export default function AboutSection() {
         </Description>
         <Description>
           When I&apos;m not programming, you will find me playing boardgames,
-          grilling, swimming, or just chilling.
+          grilling, swimming, or just chilling. Maybe even designing some witty
+          t-shirts.
         </Description>
         <Description>
           If you want to get in touch with me about
@@ -56,16 +56,11 @@ export default function AboutSection() {
           <ImageWrapper $Theme={theme} href="mailto:a.sobchack@gmail.com" target="_blank" rel="noopener noreferrer">
             <EmailOutlinedIcon sx={{ fontSize: 28 }} />
           </ImageWrapper>
-
-          <ImageWrapper $Theme={theme} href="https://singularity-gules.vercel.app/" target="_blank" rel="noopener noreferrer">
-            <Image
-              src="/singularity.png"
-              alt="Singularity icon"
-              width={24}
-              height={24}
-            />
-          </ImageWrapper>
         </SocialIconsContainer>
+
+        <Description>
+          Or you can check out some of the cool stuff I built for fun:
+        </Description>
       </DivSubContainer>
     </DivContainer>
   );

@@ -1,18 +1,15 @@
 'use client';
 
-import { useTheme } from '../../context/themeContext';
-import { useEasterEgg } from '../../context/easterEggContext';
+import { useTheme } from '../../../context/themeContext';
 import { DivContainer } from './lightButton.style';
 import LightModeOutlinedIcon from '@mui/icons-material/LightModeOutlined';
 import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
 
 export default function LightButton() {
   const { theme, toggleTheme } = useTheme();
-  const { registerClick } = useEasterEgg();
 
   const handleClick = () => {
     toggleTheme();
-    registerClick();
   };
 
   return (

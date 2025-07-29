@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Head from 'next/head';
 import { Inter } from 'next/font/google';
 import { ThemeProvider } from './context/themeContext';
-import { EasterEggProvider } from './context/easterEggContext';
 import { Analytics } from "@vercel/analytics/react"
 import StyledComponentsRegistry from '../../lib/registry'
 import "./globals.css";
@@ -31,12 +30,10 @@ export default function RootLayout({
       </Head>
       <body className={inter.variable}>
         <ThemeProvider>
-          <EasterEggProvider>
-            <StyledComponentsRegistry>
-              {children}
-              <Analytics />
-            </StyledComponentsRegistry>
-          </EasterEggProvider>
+          <StyledComponentsRegistry>
+            {children}
+            <Analytics />
+          </StyledComponentsRegistry>
         </ThemeProvider>
       </body>
     </html>
