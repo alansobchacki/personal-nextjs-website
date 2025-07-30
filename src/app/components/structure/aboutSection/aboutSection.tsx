@@ -59,7 +59,7 @@ export default function AboutSection() {
         </SocialIconsContainer>
 
         <Description>
-          Or maybe check out some of the cool stuff I built on my spare time:
+          Or maybe check out some of the cool stuff I built for fun:
         </Description>
       </DivSubContainer>
     </DivContainer>

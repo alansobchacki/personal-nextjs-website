@@ -12,10 +12,10 @@ export default function Home() {
   return (
     <DivContainer>
       <Header />
-        <GreetingsSection />
-        <AboutSection />
-        <SectionSeparator />
-        <ProjectsSection />
+      <GreetingsSection />
+      <AboutSection />
+      <SectionSeparator />
+      <ProjectsSection />
       <Footer />
     </DivContainer>
   );

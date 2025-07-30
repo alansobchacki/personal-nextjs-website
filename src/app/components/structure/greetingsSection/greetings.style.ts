@@ -27,6 +27,11 @@ export const DivSubContainer = styled.div`
   margin: 0 auto;
   padding: 0 16px;
   box-sizing: border-box;
+  transition: width 0.6s ease;
+
+  @media (max-width: 1000px) {
+    width: 90%;
+  }
 `;
 
 export const Name = styled.h1`

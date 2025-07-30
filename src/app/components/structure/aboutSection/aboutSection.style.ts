@@ -15,6 +15,11 @@ export const DivSubContainer = styled.div`
   padding: 0 16px;
   box-sizing: border-box;
   gap: 10px;
+  transition: width 0.6s ease;
+
+  @media (max-width: 1000px) {
+    width: 90%;
+  }
 `;
 
 export const Description = styled.p`
