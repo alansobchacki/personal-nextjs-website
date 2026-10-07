@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alan Sobchacki</title>
+  <meta name="description" content="Software Engineer | I make computers go beep boop">
+  <link rel="icon" href="assets/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Theme toggle: pure CSS. Checking the box flips the theme relative to the OS preference. -->
+  <input type="checkbox" id="theme-toggle" class="visually-hidden">
+
+  <header class="site-header">
+    <a class="brand" href="#">Alan Sobchacki</a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="assets/Alan Sobchacki Resume.pdf" download>Resume</a>
+    </nav>
+    <label for="theme-toggle" class="theme-button" title="Toggle theme">
+      <span class="visually-hidden">Toggle light/dark theme</span>
+      <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    </label>
+  </header>
+
+  <main class="container">
+    <section class="profile row">
+      <div class="avatar">
+        <!-- TODO: replace with your photo -->
+        <img src="assets/avatar-placeholder.svg" alt="Alan Sobchacki" width="136" height="136">
+      </div>
+      <div>
+        <h1>Alan Sobchacki</h1>
+        <p class="subtitle">Full Stack Software Engineer</p>
+        <a class="link-arrow" href="https://github.com/alansobchacki" target="_blank" rel="noopener noreferrer">github.com/alansobchacki</a>
+        <p class="bio">
+          I'm currently working at
+          <a class="inline-link" href="https://www.linkedin.com/company/hive-fuse/" target="_blank" rel="noopener noreferrer">HiveFuse</a>
+          as a full stack software engineer, where I help develop and maintain our internal
+          applications using mostly React, Next.js, and Nest.js.
+        </p>
+        <p class="bio">
+          When I'm not programming, you will find me playing boardgames, grilling, swimming,
+          or just chilling. Maybe even designing some witty t-shirts.
+        </p>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <section id="experience" class="section">
+      <h2 class="section-title">Work Experience</h2>
+
+      <article class="row entry">
+        <!-- TODO: set the real start year -->
+        <p class="entry-date">20XX - now</p>
+        <div class="entry-body">
+          <h3>Full Stack Software Engineer</h3>
+          <p class="entry-org">HiveFuse</p>
+          <p>
+            Develop and maintain internal applications across the stack, using mostly
+            React and Next.js on the front end and Nest.js on the back end.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <section id="projects" class="section">
+      <h2 class="section-title">Projects</h2>
+
+      <div class="row entry">
+        <p class="entry-date">Side projects</p>
+        <div class="entry-body projects">
+          <a class="project" href="https://github.com/alansobchacki/singularity" target="_blank" rel="noopener noreferrer">
+            <img src="assets/singularity-preview.gif" alt="Singularity preview" loading="lazy">
+            <div>
+              <h3>Singularity</h3>
+              <p>An AI-powered social media platform for humans and bots.</p>
+              <ul class="tags">
+                <li>TypeScript</li><li>Nest.js</li><li>TypeORM</li><li>PostgreSQL</li><li>Docker</li><li>Redis</li>
+                <li>Jest</li><li>React</li><li>Tailwind</li><li>Cypress</li><li>Jotai</li><li>mUI</li>
+              </ul>
+            </div>
+          </a>
+
+          <a class="project" href="https://github.com/alansobchacki/hidden-syndicate" target="_blank" rel="noopener noreferrer">
+            <img src="assets/hidden-syndicate.png" alt="Hidden Syndicate preview" loading="lazy">
+            <div>
+              <h3>Hidden Syndicate</h3>
+              <p>A full stack desktop "hidden object game".</p>
+              <ul class="tags">
+                <li>JavaScript</li><li>Node.js</li><li>Express</li><li>Prisma</li><li>PostgreSQL</li><li>React</li><li>Styled-Components</li>
+              </ul>
+            </div>
+          </a>
+
+          <a class="project" href="https://github.com/alansobchacki/odin-chess" target="_blank" rel="noopener noreferrer">
+            <img src="assets/ruby-chess.jpg" alt="Chess preview" loading="lazy">
+            <div>
+              <h3>Chess</h3>
+              <p>A "hot-seat" Ruby command-line game of Chess.</p>
+              <ul class="tags"><li>Ruby</li></ul>
+            </div>
+          </a>
+
+          <a class="project" href="https://github.com/alansobchacki/odin-js-battleship" target="_blank" rel="noopener noreferrer">
+            <img src="assets/battleship.png" alt="Battleship preview" loading="lazy">
+            <div>
+              <h3>Battleship</h3>
+              <p>A browser-based game of Battleship against an AI.</p>
+              <ul class="tags"><li>JavaScript</li><li>HTML</li><li>CSS</li></ul>
+            </div>
+          </a>
+
+          <a class="project" href="https://github.com/alansobchacki/odin-react-memory-game" target="_blank" rel="noopener noreferrer">
+            <img src="assets/memory_game.jpg" alt="Memory Game preview" loading="lazy">
+            <div>
+              <h3>Memory Game</h3>
+              <p>A browser-based memory game where you must pick 12 unique cards in a row.</p>
+              <ul class="tags"><li>React</li><li>Vite</li><li>CSS</li></ul>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2 class="section-title">Contact</h2>
+
+      <div class="row entry">
+        <p class="entry-date">Get in touch</p>
+        <div class="entry-body">
+          <p>If you want to get in touch with me about something, feel free to reach out.</p>
+          <dl class="contact-list">
+            <dt>Email</dt>
+            <dd><a class="link-arrow" href="mailto:a.sobchack@gmail.com">a.sobchack@gmail.com</a></dd>
+            <dt>GitHub</dt>
+            <dd><a class="link-arrow" href="https://github.com/alansobchacki" target="_blank" rel="noopener noreferrer">alansobchacki</a></dd>
+            <dt>LinkedIn</dt>
+            <dd><a class="link-arrow" href="https://www.linkedin.com/in/alansobchacki/" target="_blank" rel="noopener noreferrer">alansobchacki</a></dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Alan Sobchacki</p>
+  </footer>
+</body>
+</html>
