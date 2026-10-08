@@ -97,6 +97,21 @@ img {
   white-space: nowrap;
 }
 
+/* ---------- Language ---------- */
+
+/* English shows by default; checking #lang-toggle swaps to Portuguese. */
+body [lang="pt-BR"] {
+  display: none;
+}
+
+:root:has(#lang-toggle:checked) body [lang="pt-BR"] {
+  display: revert;
+}
+
+:root:has(#lang-toggle:checked) body [lang="en"] {
+  display: none;
+}
+
 /* ---------- Header ---------- */
 
 .site-header {
@@ -127,12 +142,61 @@ img {
   border-bottom-color: currentColor;
 }
 
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 24px;
+}
+
+.lang-button {
+  display: flex;
+  align-items: center;
+  height: 36px;
+  padding: 0 10px;
+  border-radius: 18px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.lang-button:hover {
+  background: var(--surface);
+}
+
+body:has(#lang-toggle:focus-visible) .lang-button {
+  outline: 2px solid var(--text);
+  outline-offset: 2px;
+}
+
+.lang-option {
+  color: var(--text-muted);
+  opacity: 0.6;
+}
+
+.lang-separator {
+  margin: 0 6px;
+  color: var(--text-muted);
+  opacity: 0.6;
+}
+
+.lang-option-en,
+:root:has(#lang-toggle:checked) .lang-option-pt {
+  color: var(--text);
+  opacity: 1;
+}
+
+:root:has(#lang-toggle:checked) .lang-option-en {
+  color: var(--text-muted);
+  opacity: 0.6;
+}
+
 .theme-button {
   display: grid;
   place-items: center;
   width: 36px;
   height: 36px;
-  margin-left: 24px;
   border-radius: 50%;
   cursor: pointer;
   transition: background-color 0.2s ease;
@@ -358,7 +422,8 @@ h1 {
 
 .detail-list {
   display: grid;
-  grid-template-columns: 100px 1fr;
+  grid-template-columns: minmax(100px, max-content) 1fr;
+  column-gap: 24px;
   row-gap: 8px;
 }
 
@@ -388,7 +453,7 @@ h1 {
     padding: 20px 16px;
   }
 
-  .theme-button {
+  .header-actions {
     margin-left: 0;
   }
 
@@ -434,7 +499,7 @@ h1 {
     margin-left: 0;
   }
 
-  .theme-button {
+  .header-actions {
     margin-left: auto;
   }
 }
