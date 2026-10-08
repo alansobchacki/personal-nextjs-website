@@ -282,6 +282,10 @@ h1 {
   margin-top: 24px;
 }
 
+.entry-body > p + .tags {
+  margin-top: 16px;
+}
+
 /* Separator between consecutive entries, only under the content column */
 .entry + .entry .entry-body {
   border-top: 1px solid var(--line);
@@ -350,16 +354,19 @@ h1 {
   color: var(--text-muted);
 }
 
-/* ---------- Contact ---------- */
+/* ---------- Detail lists ---------- */
 
-.contact-list {
+.detail-list {
   display: grid;
   grid-template-columns: 100px 1fr;
   row-gap: 8px;
+}
+
+.entry-body > p + .detail-list {
   margin-top: 20px;
 }
 
-.contact-list dt {
+.detail-list dt {
   color: var(--text-muted);
 }
 
