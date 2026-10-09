@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alan Sobchacki</title>
+  <meta name="description" content="Alan Sobchacki, a full-stack software engineer working with TypeScript, React, Node.js, and PostgreSQL.">
+  <link rel="icon" href="assets/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!--
+    Hello, fellow dev / curious person.
+
+    This site was built with pure HTML, CSS, and a tiny bit of JS. 
+    Why use a cannon when the basics are enough?
+
+    Anyway, as a reward for your curiosity,
+    I've set aside a really special gift for you:
+    
+    https://www.youtube.com/watch?v=dQw4w9WgXcQ
+  -->
+
+  <input type="checkbox" id="theme-toggle" class="visually-hidden">
+
+  <input type="checkbox" id="lang-toggle" class="visually-hidden" autocomplete="off">
+  <script>
+    (function () {
+      const toggle = document.getElementById("lang-toggle");
+      const descriptions = {
+        "en": "Alan Sobchacki, a full-stack software engineer working with TypeScript, React, Node.js, and PostgreSQL.",
+        "pt-BR": "Alan Sobchacki, engenheiro de software full-stack que trabalha com TypeScript, React, Node.js e PostgreSQL."
+      };
+
+      function apply(lang) {
+        toggle.checked = lang === "pt-BR";
+        document.documentElement.lang = lang;
+        document.querySelector('meta[name="description"]').content = descriptions[lang];
+      }
+
+      let saved = null;
+      try { saved = localStorage.getItem("lang"); } catch (e) {}
+
+      const preferred = (navigator.languages || [navigator.language])
+        .find((l) => /^(en|pt)\b/i.test(l || ""));
+
+      apply(saved in descriptions ? saved : /^pt/i.test(preferred || "") ? "pt-BR" : "en");
+
+      toggle.addEventListener("change", () => {
+        const lang = toggle.checked ? "pt-BR" : "en";
+        apply(lang);
+        try { localStorage.setItem("lang", lang); } catch (e) {}
+      });
+    })();
+  </script>
+
+  <header class="site-header">
+    <a class="brand" href="#">Alan Sobchacki</a>
+    <nav class="site-nav">
+      <a href="#experience"><span lang="en">Experience</span><span lang="pt-BR">Experiência</span></a>
+      <a href="#projects"><span lang="en">Projects</span><span lang="pt-BR">Projetos</span></a>
+      <a href="#contact"><span lang="en">Contact</span><span lang="pt-BR">Contato</span></a>
+    </nav>
+    <div class="header-actions">
+      <label for="lang-toggle" class="lang-button">
+        <span class="visually-hidden"><span lang="en">Switch language</span><span lang="pt-BR">Mudar idioma</span></span>
+        <span class="lang-option lang-option-en" aria-hidden="true">EN</span>
+        <span class="lang-separator" aria-hidden="true">/</span>
+        <span class="lang-option lang-option-pt" aria-hidden="true">PT</span>
+      </label>
+      <label for="theme-toggle" class="theme-button">
+        <span class="visually-hidden"><span lang="en">Toggle light/dark theme</span><span lang="pt-BR">Alternar tema claro/escuro</span></span>
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </label>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="profile row">
+      <div class="avatar">
+        <img src="assets/alan-sobchacki.png" alt="Alan Sobchacki" width="136" height="136">
+      </div>
+      <div>
+        <h1>Alan Sobchacki</h1>
+        <p class="subtitle">
+          <span lang="en">Full-Stack Software Engineer</span>
+          <span lang="pt-BR">Engenheiro de Software Full-Stack</span>
+        </p>
+        <a class="link-arrow" href="https://github.com/alansobchacki" target="_blank" rel="noopener noreferrer">github.com/alansobchacki</a>
+        <p class="bio">
+          <span lang="en">
+            Full-stack software engineer based in Brazil with 4+ years of experience. I work mostly with
+            TypeScript, React, Node.js, and PostgreSQL, with a slight preference for front-end work.
+          </span>
+          <span lang="pt-BR">
+            Engenheiro de software full-stack localizado no Brasil, com mais de 4 anos de experiência. Trabalho
+            principalmente com TypeScript, React, Node.js e PostgreSQL, com uma leve preferência pelo front-end.
+          </span>
+        </p>
+        <p class="bio">
+          <span lang="en">
+            When I'm not at work, you'll probably find me playing board games, grilling, swimming,
+            or just chilling. Maybe even
+            <a class="inline-link" href="https://ripper19.redbubble.com" target="_blank" rel="noopener noreferrer">designing some t-shirts and stickers</a>.
+          </span>
+          <span lang="pt-BR">
+            Quando não estou trabalhando, você provavelmente vai me encontrar jogando jogos de tabuleiro,
+            fazendo churrasco, nadando ou só relaxando. Talvez até
+            <a class="inline-link" href="https://ripper19.redbubble.com" target="_blank" rel="noopener noreferrer">criando umas camisetas e adesivos</a>.
+          </span>
+        </p>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <section id="experience" class="section">
+      <h2 class="section-title"><span lang="en">Work Experience</span><span lang="pt-BR">Experiência Profissional</span></h2>
+
+      <article class="row entry">
+        <p class="entry-date"><span lang="en">Sep 2025 – Present</span><span lang="pt-BR">Set 2025 – Atual</span></p>
+        <div class="entry-body">
+          <h3><span lang="en">Full-Stack Software Engineer</span><span lang="pt-BR">Engenheiro de Software Full-Stack</span></h3>
+          <p class="entry-org">
+            <a class="inline-link" href="https://www.linkedin.com/company/scissero/posts/" target="_blank" rel="noopener noreferrer">Scissero</a>
+            · <span lang="en">London, UK</span><span lang="pt-BR">Londres, Reino Unido</span>
+          </p>
+          <p>
+            <span lang="en">
+              At Scissero, a mid-sized company, I build AI-powered systems for automated legal and financial
+              document generation, with a strong focus on precision, accuracy, and high-quality output.
+            </span>
+            <span lang="pt-BR">
+              Na Scissero, uma empresa de médio porte, desenvolvo sistemas com IA para a geração automatizada
+              de documentos jurídicos e financeiros, com forte foco em precisão, confiabilidade e qualidade.
+            </span>
+          </p>
+          <ul class="tags">
+            <li>Node.js</li><li>React</li><li>TypeScript</li><li>PostgreSQL</li><li>Jest</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="row entry">
+        <p class="entry-date"><span lang="en">Mar 2023 – Sep 2025</span><span lang="pt-BR">Mar 2023 – Set 2025</span></p>
+        <div class="entry-body">
+          <h3><span lang="en">Full-Stack Software Engineer</span><span lang="pt-BR">Engenheiro de Software Full-Stack</span></h3>
+          <p class="entry-org">
+            <a class="inline-link" href="https://www.linkedin.com/company/hive-fuse/" target="_blank" rel="noopener noreferrer">HiveFuse</a>
+            · <span lang="en">Recife, Brazil</span><span lang="pt-BR">Recife, Brasil</span>
+          </p>
+          <p>
+            <span lang="en">
+              At HiveFuse, an early-stage startup, I developed scalable front-end and back-end features for an
+              AI-powered SaaS platform that offered scheduling and marketing solutions to small healthcare businesses.
+            </span>
+            <span lang="pt-BR">
+              Na HiveFuse, uma startup em estágio inicial, desenvolvi funcionalidades escaláveis de front-end e
+              back-end para uma plataforma SaaS com IA que oferecia soluções de agendamento e marketing para
+              pequenas empresas da área da saúde.
+            </span>
+          </p>
+          <ul class="tags">
+            <li>React</li><li>Node.js</li><li>Next.js</li><li>NestJS</li><li>TypeScript</li><li>PostgreSQL</li><li>Redis</li><li>AWS</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+
+    <section id="skills" class="section">
+      <h2 class="section-title"><span lang="en">Skills</span><span lang="pt-BR">Habilidades</span></h2>
+
+      <div class="row entry">
+        <p class="entry-date">Stack</p>
+        <dl class="entry-body detail-list">
+          <dt><span lang="en">Languages</span><span lang="pt-BR">Linguagens</span></dt>
+          <dd>TypeScript, JavaScript</dd>
+          <dt>Back-end</dt>
+          <dd>Node.js, NestJS, PostgreSQL, Redis, REST APIs</dd>
+          <dt>Front-end</dt>
+          <dd>React, Next.js, Tailwind CSS, TanStack</dd>
+          <dt><span lang="en">Tools</span><span lang="pt-BR">Ferramentas</span></dt>
+          <dd>Git, Docker, AWS, CI/CD, Jest, Cypress</dd>
+        </dl>
+      </div>
+    </section>
+
+    <section id="education" class="section">
+      <h2 class="section-title"><span lang="en">Education</span><span lang="pt-BR">Formação</span></h2>
+
+      <div class="row entry">
+        <p class="entry-date"><span lang="en">Postgraduate</span><span lang="pt-BR">Pós-graduação</span></p>
+        <div class="entry-body">
+          <h3><span lang="en">Software Engineering</span><span lang="pt-BR">Engenharia de Software</span></h3>
+          <p class="entry-org"><span lang="en">Anhanguera University</span><span lang="pt-BR">Universidade Anhanguera</span></p>
+        </div>
+      </div>
+
+      <div class="row entry">
+        <p class="entry-date"><span lang="en">Bachelor's degree</span><span lang="pt-BR">Bacharelado</span></p>
+        <div class="entry-body">
+          <h3><span lang="en">Law</span><span lang="pt-BR">Direito</span></h3>
+          <p class="entry-org"><span lang="en">Estácio de Sá University</span><span lang="pt-BR">Universidade Estácio de Sá</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <h2 class="section-title"><span lang="en">Projects</span><span lang="pt-BR">Projetos</span></h2>
+
+      <div class="row entry">
+        <p class="entry-date"><span lang="en">Things I built for fun</span><span lang="pt-BR">Coisas que criei por diversão</span></p>
+        <div class="entry-body projects">
+          <a class="project" href="https://github.com/alansobchacki/singularity" target="_blank" rel="noopener noreferrer">
+            <img src="assets/singularity-preview.gif" alt="" loading="lazy">
+            <div>
+              <h3>Singularity</h3>
+              <p>
+                <span lang="en">A full-stack, AI-powered social media platform for humans and bots.</span>
+                <span lang="pt-BR">Uma rede social full-stack com IA, feita para humanos e bots.</span>
+              </p>
+              <ul class="tags">
+                <li>TypeScript</li><li>NestJS</li><li>TypeORM</li><li>PostgreSQL</li><li>Docker</li><li>Redis</li>
+                <li>Jest</li><li>React</li><li>Tailwind</li><li>Cypress</li><li>Jotai</li><li>MUI</li>
+              </ul>
+            </div>
+          </a>
+
+          <a class="project" href="https://github.com/alansobchacki/hidden-syndicate" target="_blank" rel="noopener noreferrer">
+            <img src="assets/hidden-syndicate.png" alt="" loading="lazy">
+            <div>
+              <h3>Hidden Syndicate</h3>
+              <p>
+                <span lang="en">A full-stack hidden-object game for desktop.</span>
+                <span lang="pt-BR">Um jogo full-stack de objetos escondidos para desktop.</span>
+              </p>
+              <ul class="tags">
+                <li>JavaScript</li><li>Node.js</li><li>Express</li><li>Prisma</li><li>PostgreSQL</li><li>React</li><li>styled-components</li>
+              </ul>
+            </div>
+          </a>
+
+          <a class="project" href="https://github.com/alansobchacki/odin-chess" target="_blank" rel="noopener noreferrer">
+            <img src="assets/ruby-chess.jpg" alt="" loading="lazy">
+            <div>
+              <h3><span lang="en">Chess</span><span lang="pt-BR">Xadrez</span></h3>
+              <p>
+                <span lang="en">A hot-seat, command-line chess game written in Ruby.</span>
+                <span lang="pt-BR">Um jogo de xadrez para linha de comando, escrito em Ruby, para dois jogadores no mesmo computador.</span>
+              </p>
+              <ul class="tags"><li>Ruby</li></ul>
+            </div>
+          </a>
+
+          <a class="project" href="https://github.com/alansobchacki/odin-js-battleship" target="_blank" rel="noopener noreferrer">
+            <img src="assets/battleship.png" alt="" loading="lazy">
+            <div>
+              <h3><span lang="en">Battleship</span><span lang="pt-BR">Batalha Naval</span></h3>
+              <p>
+                <span lang="en">A browser-based game of Battleship against an AI.</span>
+                <span lang="pt-BR">Um jogo de Batalha Naval no navegador contra uma IA.</span>
+              </p>
+              <ul class="tags"><li>JavaScript</li><li>HTML</li><li>CSS</li></ul>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2 class="section-title"><span lang="en">Contact</span><span lang="pt-BR">Contato</span></h2>
+
+      <div class="row entry">
+        <p class="entry-date"><span lang="en">Get in touch</span><span lang="pt-BR">Fale comigo</span></p>
+        <div class="entry-body">
+          <p>
+            <span lang="en">If you'd like to talk about anything, feel free to reach out.</span>
+            <span lang="pt-BR">Se quiser conversar sobre qualquer assunto, fique à vontade para entrar em contato.</span>
+          </p>
+          <dl class="detail-list">
+            <dt><span lang="en">Email</span><span lang="pt-BR">E-mail</span></dt>
+            <dd><a class="link-arrow" href="mailto:a.sobchack@gmail.com">a.sobchack@gmail.com</a></dd>
+            <dt>GitHub</dt>
+            <dd><a class="link-arrow" href="https://github.com/alansobchacki" target="_blank" rel="noopener noreferrer">github.com/alansobchacki</a></dd>
+            <dt>LinkedIn</dt>
+            <dd><a class="link-arrow" href="https://www.linkedin.com/in/alansobchacki/" target="_blank" rel="noopener noreferrer">linkedin.com/in/alansobchacki</a></dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Alan Sobchacki</p>
+  </footer>
+</body>
+</html>
